@@ -1,0 +1,137 @@
+*{box-sizing: border-box}
+body{
+    margin: 0 auto;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr) ;
+}
+.firstrow{
+    grid-column: 1/7;
+    grid-row: 1;
+    display: grid;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    grid-template-columns:repeat(7, 1fr);
+    
+}
+.menu{
+    grid-column: 1;
+    grid-row : 1;
+}
+.logo{
+    grid-column: 2;
+    grid-row : 1;
+}
+.searchinput{
+    grid-column: 3/4;
+    grid-row : 1;
+}
+.voice{
+    grid-column: 5;
+    grid-row : 1;
+}
+.morevert{
+    grid-column: 6;
+    grid-row : 1;
+}
+.signin{
+    grid-column: 7;
+    grid-row : 1;
+}
+.searchinput{
+    position: relative;
+}
+input[type="search"]{
+    appearance: none;
+  width: 480px; 
+    height: 45px;
+    padding: 1px 0 0 48px;
+    font-size: 22px;
+    color: blue;
+    outline: 0;
+    border-radius: 
+    25px 0 0 25px ; 
+}
+.searchbutton{
+    position: absolute;
+  border-left: none;
+  height: 45px;
+  width:100px;
+  border-radius: 0 25px 25px 0;
+  padding: 15px
+}
+.search{
+    position:absolute;
+    left: 10px;
+    margin: 5px;
+    top:10px;
+  }
+.aside{ 
+    grid-column: 1;
+    grid-row:2;
+    line-height: 2em;
+
+}
+.aside:hover{
+    overflow-y: auto;
+}
+.aside>div {
+    padding:10px;
+    border-radius:15px;
+    align-items: center;
+    border-radius:15px;
+}
+.aside>div span{
+    top:0.5em;  
+padding-right:30px;
+}
+.aside>div:hover{
+    background-color:whitesmoke;
+}
+
+.aside > div button{
+    border-radius: 15px;
+    border: 0.5px solid whitesmoke;
+    color:blue;
+    padding: 20px;
+    position: relative;
+ }
+.article{
+    grid-column:2/7;
+    grid-row:2;
+}
+.secondrow{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.secondrow > div{
+    background-color:whitesmoke;
+    padding: 8px;
+    border-radius: 10px;
+}
+.thirdrow{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+ 
+ 
+}
+ 
+.thirdrow > div{
+    justify-content: space-between;
+    padding: 10px;
+}
+.thirdrow > div img{
+    width:250px;
+    border-radius:15px;
+ } 
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL'0,
+    'wght' 600,
+    'GRAD' 200,
+    'opsz' 48;
+}
